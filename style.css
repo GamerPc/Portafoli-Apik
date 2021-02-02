@@ -685,29 +685,43 @@ footer span a:hover{
     }
 }
 
-@media (max-width: 346px){
+@media (max-width: 374px){
     .home .home-content .text-2{
         font-size: 40px;
     }
     .home .home-content .text-3{
         font-size: 22px;
     }
-    .teams .title::after{
-        content: "Quien es mi equipo";
-        top: 50px;
-    }
     .contact .title::after{
-        content: "Ponerse en contacto";
         top: 50px;
     }
     .skills .title::after{
-        content: "lo que savemos";
         top: 95px;
     }
     .services .title::after,
 .teams .title::after{
-    background: #111;
-    content: "que proporciono";
     top: 50px;
 }
+}
+
+@media (max-width: 278px){
+    .home .home-content .text-2{
+        font-size: 30px;
+    }
+    .home .home-content .text-3{
+        font-size: 17px;
+    }
+    .contact .title::after{
+        top: 50px;
+    }
+    .skills .title::after{
+        top: 95px;
+    }
+    .services .title::after{
+        top: 90px;
+    }
+    .teams .title::after{
+
+         top: 50px;
+    }
 }
