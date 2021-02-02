@@ -684,3 +684,30 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+@media (max-width: 346px){
+    .home .home-content .text-2{
+        font-size: 40px;
+    }
+    .home .home-content .text-3{
+        font-size: 22px;
+    }
+    .teams .title::after{
+        content: "Quien es mi equipo";
+        top: 50px;
+    }
+    .contact .title::after{
+        content: "Ponerse en contacto";
+        top: 50px;
+    }
+    .skills .title::after{
+        content: "lo que savemos";
+        top: 95px;
+    }
+    .services .title::after,
+.teams .title::after{
+    background: #111;
+    content: "que proporciono";
+    top: 50px;
+}
+}
