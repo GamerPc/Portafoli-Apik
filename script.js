@@ -69,4 +69,46 @@ $(document).ready(function(){
             }
         }
     });
+    
+    $('#btnSend').click(function(){
+
+        var errores = '';
+
+        //validar nombre 
+
+        if($('#nombre').val() == ''){
+            errores += '<p>Escriba un nombre</p>';
+            $('#nombre').css("border-bottom-color","#ff0000");
+        }else{
+            $('#nombre').css("border-bottom-color","#d1d1d1");
+        }
+
+        //validar correo
+
+        if($('#email').val() == ''){
+            errores += '<p>Escriba su Correo</p>';
+            $('#email').css("border-bottom-color","#ff0000");
+        }else{
+            $('#email').css("border-bottom-color","#d1d1d1");
+        }
+
+        //validar sujeto
+
+        if($('#sujeto').val() == ''){
+            errores += '<p>Escriba el sujeto</p>';
+            $('#sujeto').css("border-bottom-color","#ff0000");
+        }else{
+            $('#sujeto').css("border-bottom-color","#d1d1d1");
+        }
+
+
+        //validar mensaje
+
+        if($('#mensaje').val() == ''){
+            errores += '<p>Escriba un mensaje</p>';
+            $('#mensaje').css("border-bottom-color","#ff0000");
+        }else{
+            $('#mensaje').css("border-bottom-color","#d1d1d1");
+        }
+    });
 });
